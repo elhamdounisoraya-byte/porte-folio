@@ -1,0 +1,614 @@
+/* ==========================================
+   RESET GENERAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+
+    background: #f8fafc;
+
+    color: #334155;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ==========================================
+   NAVBAR HORIZONTALE
+========================================== */
+
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #0f172a,
+        #0369a1
+    );
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 70px;
+
+    z-index: 1000;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+.navbar h1 {
+
+    color: white;
+
+    font-size: 28px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+
+
+.nav-links {
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 35px;
+
+    list-style: none;
+
+}
+
+
+
+
+
+.nav-link {
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+
+
+.nav-link:hover {
+
+    color:#38bdf8;
+
+}
+
+
+
+
+
+/* ==========================================
+   SECTIONS GENERALES
+========================================== */
+
+
+.section {
+
+
+    min-height:100vh;
+
+    padding:120px 10% 60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.section h2 {
+
+
+    font-size:40px;
+
+    color:#0369a1;
+
+    margin-bottom:30px;
+
+    position:relative;
+
+
+}
+
+
+.section h2::after {
+
+
+    content:"";
+
+    width:70px;
+
+    height:4px;
+
+    background:#38bdf8;
+
+    display:block;
+
+    margin:10px auto;
+
+
+}
+
+
+
+
+
+.section p {
+
+
+    max-width:800px;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* ==========================================
+   HOME
+========================================== */
+
+
+#home {
+
+
+    background:linear-gradient(
+
+        135deg,
+
+        #0f172a,
+
+        #0369a1
+
+    );
+
+
+    color:white;
+
+}
+
+
+
+
+
+#home h2 {
+
+
+    color:white;
+
+    font-size:55px;
+
+
+}
+
+
+
+#home p {
+
+
+    font-size:22px;
+
+}
+
+
+
+
+
+.profile-img {
+
+
+    margin-top:40px;
+
+    width:280px;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,0.4);
+
+    transition:0.4s;
+
+
+}
+
+
+
+.profile-img:hover {
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+
+#about {
+
+
+    background:#ffffff;
+
+
+}
+
+
+
+#about ul {
+
+
+    display:flex;
+
+    gap:20px;
+
+    list-style:none;
+
+    margin-top:30px;
+
+
+}
+
+
+
+#about li {
+
+
+    background:#0369a1;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:30px;
+
+}
+
+
+
+
+
+/* ==========================================
+   WORK - TABLEAU
+========================================== */
+
+
+table {
+
+
+    width:90%;
+
+    margin-top:40px;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+
+th {
+
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:18px;
+
+}
+
+
+
+td {
+
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+tr:hover {
+
+
+    background:#e0f2fe;
+
+
+}
+
+
+
+
+
+/* ==========================================
+   RESUME VIDEO AUDIO
+========================================== */
+
+
+video,
+audio {
+
+
+    margin-top:25px;
+
+    width:80%;
+
+    border-radius:15px;
+
+
+}
+
+
+
+
+
+/* ==========================================
+   CONTACT FORMULAIRE
+========================================== */
+
+
+form {
+
+
+    width:70%;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+label {
+
+
+    font-weight:bold;
+
+    color:#0f172a;
+
+
+}
+
+
+
+input,
+textarea {
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin:10px 0 20px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+
+}
+
+
+
+input:focus,
+textarea:focus {
+
+
+    outline:none;
+
+    border-color:#0369a1;
+
+
+}
+
+
+
+
+button {
+
+
+    background:#0369a1;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 40px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+
+}
+
+
+
+button:hover {
+
+
+    background:#0f172a;
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+
+.footer {
+
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+
+@media(max-width:768px){
+
+
+.navbar {
+
+
+    flex-direction:column;
+
+    gap:20px;
+
+
+}
+
+
+.nav-links {
+
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+
+}
+
+
+#home h2 {
+
+
+    font-size:35px;
+
+
+}
+
+
+.section {
+
+
+    padding:100px 20px;
+
+}
+
+
+
+form {
+
+
+    width:95%;
+
+
+}
+
+
+}
